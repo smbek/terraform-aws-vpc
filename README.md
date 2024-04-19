@@ -2,7 +2,7 @@
 
 ```hcl
 module "vpc" {
-    source = "smbek/terraform-aws-vpcbatch5/aws"
+    source = "smbek/vpcbatch5/aws"
     region        = "us-east-2"
     vpc_cidr      = "10.0.0.0/16"
     sub1_cidr     = "10.0.1.0/24"
