@@ -24,10 +24,25 @@ variable "sub3_cidr" {
 }
 
 variable "ip_on_launch" {
-  type = bool
+  type        = bool
+  description = "true or false"
 }
 
 variable "instance_type" {
   type        = string
-  description = "Provide instance type"
+  description = "Provide Instance type"
+}
+
+variable "subnet1_name" {
+  type        = string
+  description = "Provide subnet 1 name"
+}
+
+variable "subnet2_name" {
+  type        = string
+  description = "Provide subnet 2 name"
+}
+variable "subnet3_name" {
+  type        = string
+  description = "Provide subnet 3 name"
 }

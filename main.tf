@@ -11,7 +11,7 @@ resource "aws_subnet" "main1" {
   cidr_block              = var.sub1_cidr
 
   tags = {
-    Name = "subnet1"
+    Name = var.subnet1_name
   }
 }
 resource "aws_subnet" "main2" {
@@ -21,7 +21,7 @@ resource "aws_subnet" "main2" {
   cidr_block              = var.sub2_cidr
 
   tags = {
-    Name = "subnet2"
+    Name = var.subnet2_name
   }
 }
 resource "aws_subnet" "main3" {
@@ -31,7 +31,7 @@ resource "aws_subnet" "main3" {
   cidr_block              = var.sub3_cidr
 
   tags = {
-    Name = "subnet3"
+    Name = var.subnet3_name
   }
 }
 resource "aws_internet_gateway" "gw" {
